@@ -22,7 +22,7 @@ const TaskItem = ({ task }) => {
           <p>Due Date: {task.dueDate}</p>
           <p>Status: {task.status}</p>
 
-          {task.status !== "Completed" && (
+          {task.status !== "Completed" && task.status !== "Pending" && (
             <button
               onClick={() => handleStatusChange("Completed")}
               className="task-button"
