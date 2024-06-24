@@ -39,30 +39,48 @@ const TaskList = () => {
       </div>
       <div className="task-section">
         <h3>Pending</h3>
-        {filteredTasks.map((task) => {
-          if (task.status === "Pending") {
-            return <TaskItem key={task.id} task={task} />;
-          }
-          return null;
-        })}
+        <div className="inner-task-section">
+        {filteredTasks.filter((task) => task.status === "Pending").length === 0 ? (
+          <p>No data in Pending</p>
+        ) : (
+          filteredTasks.map((task) => {
+            if (task.status === "Pending") {
+              return <TaskItem key={task.id} task={task} />;
+            }
+            return null;
+          })
+        )}
+        </div>
       </div>
       <div className="task-section">
         <h3>In Progress</h3>
-        {filteredTasks.map((task) => {
-          if (task.status === "In Progress") {
-            return <TaskItem key={task.id} task={task} />;
-          }
-          return null;
-        })}
+        <div className="inner-task-section">
+        {filteredTasks.filter((task) => task.status === "In Progress").length === 0 ? (
+          <p>No data in Progress</p>
+        ) : (
+          filteredTasks.map((task) => {
+            if (task.status === "In Progress") {
+              return <TaskItem key={task.id} task={task} />;
+            }
+            return null;
+          })
+        )}
+        </div>
       </div>
       <div className="task-section">
         <h3>Completed</h3>
-        {filteredTasks.map((task) => {
-          if (task.status === "Completed") {
-            return <TaskItem key={task.id} task={task} />;
-          }
-          return null;
-        })}
+        <div className="inner-task-section">
+        {filteredTasks.filter((task) => task.status === "Completed").length === 0 ? (
+          <p>No data in Completed</p>
+        ) : (
+          filteredTasks.map((task) => {
+            if (task.status === "Completed") {
+              return <TaskItem key={task.id} task={task} />;
+            }
+            return null;
+          })
+        )}
+        </div>
       </div>
     </div>
   );

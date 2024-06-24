@@ -89,6 +89,13 @@
   padding: 10px;
 }
 
+.inner-task-section>p{
+  text-align: center;
+  font-weight:100;
+  color: #5e6365;
+  opacity: 40%;
+}
+
 .task-section h3 {
   text-align: center;
   color: #333;
