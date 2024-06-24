@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <h1 className="head">Task Management</h1>
         <TaskForm />
-        <TaskList />
+        <TaskList /> 
       </div>
     </Provider>
   )

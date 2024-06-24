@@ -31,7 +31,7 @@ const TaskEditForm = ({ task, setEditing }) => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="task-edit-input"
-        />
+        /> 
         <input
           type="date"
           value={dueDate}

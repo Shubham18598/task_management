@@ -47,7 +47,7 @@ const TaskForm = () => {
         <button type="submit" className="task-button">
           Add Task
         </button>
-      </form>
+      </form> 
     </div>
   );
 };

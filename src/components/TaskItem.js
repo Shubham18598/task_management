@@ -16,7 +16,7 @@ const TaskItem = ({ task }) => {
       {editing ? (
         <TaskEditForm task={task} setEditing={setEditing} />
       ) : (
-        <div>
+        <div> 
           <p>Title: {task.title}</p>
           <p>Description: {task.description}</p>
           <p>Due Date: {task.dueDate}</p>
