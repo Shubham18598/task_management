@@ -36,5 +36,5 @@ This is a task management application built with React and Redux. It allows user
 
 ### Demo
 
-You can view a live demo of the Todo App: https://task-management-assign3.netlify.app/
+You can view a live demo of the Todo App: https://task-management-assign7.netlify.app/
 
